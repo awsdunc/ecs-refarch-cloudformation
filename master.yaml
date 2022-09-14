@@ -85,7 +85,7 @@ Resources:
   LifecycleHook:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3.amazonaws.com/ecs-refarch-cloudformation/infrastructure/lifecyclehook.yaml
+      TemplateURL: https://ecs-resilience-bucket-duncan.s3.eu-west-1.amazonaws.com/lifecyclehook.yaml
       Parameters:
         Cluster: !GetAtt ECS.Outputs.Cluster
         ECSAutoScalingGroupName: !GetAtt ECS.Outputs.ECSAutoScalingGroupName
